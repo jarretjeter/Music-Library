@@ -17,12 +17,11 @@ class Artist:
     def __repr__(self):
         return f"{self.artist}, {self.genre}, {self.birth_date}"
 
-    def has_artist(self):
-        self.artist = artist
-        if self.artist in Artist.artists:
-            return f"{self.artist} is in the list of artists"
+    def has_artist(artist):
+        if artist in Artist.artists:
+            print(f"{artist} is in the list of artists")
         else:
-            return f"{self.artist} is not currently in the list of artists"
+            print(f"{artist} is not currently in the list of artists")
 
 class Song:
     def __init__(self, title, length, lyrics):
