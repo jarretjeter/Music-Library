@@ -4,3 +4,10 @@ class Artists:
         self.name = name
         self.genre = genre
         self.birth_date = birth_date
+
+class Songs:
+    def __init__(self, artist, title, length, lyrics):
+        self.artist = artist
+        self.title = title
+        self.length = length
+        self.lyrics = lyrics
