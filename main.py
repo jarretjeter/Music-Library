@@ -26,7 +26,7 @@ class Artist:
 
 class Song:
     def __init__(self, title, length, lyrics):
-        artist = Artist.id_number
+        # artist = Artist.id_number
         self.title = f"Title: {title}"
         self.length = f"Length: {length}"
         self.lyrics = f"Lyrics: {lyrics}"
@@ -35,6 +35,7 @@ class Song:
         return f"{self.title}, {self.length}, {self.lyrics}"
 
 mj = Artist("Michael Jackson", "Pop", "August 29, 1958")
+print(mj.artist)
 print(mj.genre)
 print(mj.id)
 print(mj)
